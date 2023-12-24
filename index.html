@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./firework.css" />
+    <link rel="stylesheet" href="./snow.css" />
   </head>
   <body>
+    <div class="snow-bg"></div>
     <div class="main">
       <div class="tree">
         <div class="leaf leaf1">*</div>
@@ -70,4 +72,45 @@
       <div class="explosion green"></div>
     </div>
   </body>
+
+  <script>
+    setTimeout(() => {
+      const snowbg = document.querySelector(".snow-bg");
+      const body = document.querySelector("body");
+      body.style =
+        "background: radial-gradient(ellipse at center, #0a0025 0%, #000000 100%);";
+
+      snowbg.innerHTML = `
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>
+      <div class="snow"></div>`;
+    }, 12000);
+  </script>
 </html>
